@@ -69,9 +69,9 @@ try horizontal and vertical pictures in the store grid
 @font-face 
 {
 font-family: "PT-F5 Regular";
-src: url("https://dl.dropboxusercontent.com/s/qklzzyhmo13rxyc/PT-F5-Regular.ttf");
-src: url("https://dl.dropboxusercontent.com/s/vx77opjk4kuo9xx/PT-F5-Regular.woff") format("woff"),
-url("https://dl.dropboxusercontent.com/s/an4ar6az6fiwsmp/PT-F5-Regular.otf") format("opentype");
+src: url("fonts/PT-F5-Regular.ttf");
+src: url("fonts/PT-F5-Regular.woff") format("woff"),
+url("fonts/PT-F5-Regular.otf") format("opentype");
 }
 
 /*variables*/
