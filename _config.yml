@@ -1,9 +1,0 @@
-# Site settings
-title: Your awesome title
-url: "http://pedestriantactics.github.io" # the base hostname & protocol for your site
-twitter_username: pedestriantac
-github_username:  pedestriantactics
-
-# Build settings
-markdown: kramdown
-permalink: /:year/:title:output_ext
