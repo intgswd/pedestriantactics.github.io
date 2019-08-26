@@ -1,10 +1,10 @@
 ---
 layout: default
-thumbnail: images/square.jpg
+thumbnail: images/portrait.jpg
 title: Test Post
 ---
-[Test Image](images/square.jpg)
-[Test Image 2](images/portrait.jpg)
+![Test Image](images/square.jpg)
+![Test Image 2](images/portrait.jpg)
 # Here's a test
 Here's a description.
 
