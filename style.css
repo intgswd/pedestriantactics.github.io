@@ -271,7 +271,7 @@ h4 {
         border-bottom: var(--border-width) solid white;
     }
 
-    .post-link, .post-link:hover {
+    .post-link a, .post-link a:hover {
         border: none;
     }
 
