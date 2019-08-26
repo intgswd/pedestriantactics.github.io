@@ -2,15 +2,12 @@
 layout: default
 title: Index
 ---
-                <h3 class="navcolumn-heading">Timeline</h3>
-                <div class="content">
-                    {% for post in site.posts %}
-                    <div class="postcontainer">
-                        <a href="{{ post.url }}">
-                            <img src="{{ post.thumbnail }}">
-                            {{ post.date | date: %d %B %Y }}
-                        </a>
-                    </div>
-                    {% endfor %}
 
-                </div>
+{% for post in site.posts %}
+<div class="postcontainer">
+    <a href="{{ post.url }}">
+        <img src="{{ post.thumbnail }}">
+        {{ post.date | date: %d %B %Y }}
+    </a>
+</div>
+{% endfor %}
