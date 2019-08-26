@@ -1,6 +1,6 @@
 ---
 layout: post
-thumbnail: images/square.jpg
+thumbnail: /images/square.jpg
 title: Test Post Early
 ---
 ![Test Image](/images/square.jpg)

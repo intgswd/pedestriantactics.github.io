@@ -1,6 +1,6 @@
 ---
 layout: post
-thumbnail: images/portrait.jpg
+thumbnail: /images/portrait.jpg
 title: Test Post
 ---
 ![Test Image](/images/square.jpg)
