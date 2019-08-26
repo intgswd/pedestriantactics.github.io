@@ -4,19 +4,13 @@ title: Index
 ---
                 <h3 class="navcolumn-heading">Timeline</h3>
                 <div class="content">
-
+                    {% for post in site.posts %}
                     <div class="postcontainer">
-                        <img src="images/square.jpg">
-                        <h2>Pretend this doesn't exist. It's a test right now.</h2>
-                        <p>Available now!</p>
-                        <h3><a>Spotify</a><a>Bandcamp</a><a>Soundcloud</a></h3>
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.thumbnail }}">
+                            {{ post.date | date: %d %B %Y }}
+                        </a>
                     </div>
-
-                    <div class="postcontainer">
-                        <img src="images/portrait.jpg">
-                        <h2>This too...</h2>
-                        <p>Available now!</p>
-                        <h3><a>Spotify</a><a>Bandcamp</a><a>Soundcloud</a></h3>
-                    </div>
+                    {% endfor %}
 
                 </div>
