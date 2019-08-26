@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 thumbnail: images/square.jpg
 title: Test Post Early
 ---

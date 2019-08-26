@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 thumbnail: images/portrait.jpg
 title: Test Post
 ---
