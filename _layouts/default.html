@@ -26,14 +26,19 @@
                     <a href="/"><h1>PT-un<br />finished</h1></a>
                 </div>
                 <div class="navcontainer">
-
-                    <div class="navcontainer-navcolumn">
-                        <h3 class="navcolumn-heading">Catalog</h3>
-                        {% for i in site.data.menu %}
-                        <a class="navcolumn-link" href="/{{ i | downcase }}">{{ i }}</a>
-                        {% endfor %}
-                    </div>
-
+                    {% for item in site.data.menu %}
+                        <div class="navcontainer-navcolumn">
+                            <h3 class="navcolumn-heading">{{ title }}</h3>
+                            {% for entry in item.subfolderitems %}
+                                {% if page.url %}
+                                    <a class="navcolumn-link" href="{{ entry.page.url }}">{{ entry.page }}</a>
+                                {% else %}
+                                    <a class="navcolumn-link" href="/{{ entry.page | downcase }}">{{ entry.page }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+<!--
                     <div class="navcontainer-navcolumn">
                         <h3 class="navcolumn-heading">Links</h3>
                         <a class="navcolumn-link" href="https://www.facebook.com/pedestriantactics">Facebook</a>
@@ -45,6 +50,8 @@
                         <a class="navcolumn-link" href="http://eepurl.com/drak_f">Subscribe</a>
                         <a class="navcolumn-link" href="https://www.dropbox.com/sh/edgemmz3yl62vb3/AADACRJQuf6Wmex9B-DnKd3ua?dl=0">Press</a>
                     </div>
+
+                    -->
 
                 </div>
             </div>
