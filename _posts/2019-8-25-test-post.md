@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 thumbnail: /images/portrait.jpg
 title: Test Post
 ---

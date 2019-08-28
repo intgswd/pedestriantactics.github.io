@@ -143,16 +143,16 @@ h4 {
 }
 
  /*vertical spacing between containers*/
- .header-logo, .navcontainer, .postcontainer {
+ .header-logo, .navcontainer, .contentcontainer {
     margin-bottom: calc(var(--spacing)*3);
  }
 
  /*spacing between post elements*/
- .postcontainer p, .postcontainer a, .postcontainer h2 {
+ .contentcontainer p, .contentcontainer a, .contentcontainer h2 {
     margin-bottom: calc(var(--spacing)*1);
 }
 
- .postcontainer img {
+ .contentcontainer img {
     padding-bottom: calc(var(--spacing)*1);
     width: 100%;
 }
@@ -200,7 +200,7 @@ h4 {
      padding-bottom: calc(var(--spacing)*1);
  }
 
- .contentcontainer .navcolumn-heading {
+ .pagecontainer .navcolumn-heading {
     margin-bottom: calc(var(--spacing)*3);
     padding-bottom: calc(var(--spacing)*1);
 }
