@@ -29,7 +29,7 @@
 
                     <div class="navcontainer-navcolumn">
                         <h3 class="navcolumn-heading">Catalog</h3>
-                        {% for i in site.data.menu %}
+                        {% for i in site.menu %}
                         <a class="navcolumn-link" href="/{{ i | downcase }}">{{ i }}</a>
                         {% endfor %}
                     </div>
