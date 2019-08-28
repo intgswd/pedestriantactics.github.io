@@ -1,5 +1,3 @@
-item:PT-T50
-
-item:PT-T52
-
-item:TEST-POST
+- item:PT-T50
+- item:PT-T52
+- item:TEST-POST
