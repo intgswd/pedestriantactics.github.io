@@ -1,11 +1,10 @@
 ---
-layout: page
 thumbnail: /images/square.jpg
 title: Test Post Early
 ---
 ![Test Image 2](/images/portrait.jpg)
 
-
+WELL HELLO!
 ![Test Image 2](/images/portrait.jpg)
 
 ![Test Image 2](/images/portrait.jpg)
