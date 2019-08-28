@@ -280,7 +280,6 @@ h4 {
 
     a img, a img:hover, 
     .post-link, .post-link:hover, 
-    .post-link a, .post-link a:hover,
     .navcontainer-navcolumn a, .navcontainer-navcolumn a:hover {
         border: none;
     }
