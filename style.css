@@ -113,6 +113,13 @@ a, a:hover {
     width: fit-content;
 }
 
+a img, a img:hover, 
+.post-link, .post-link:hover, 
+.post-link a, .post-link a:hover,
+.navcontainer-navcolumn a, .navcontainer-navcolumn a:hover {
+    border: none;
+}
+
 body, h3 {
     font-size: var(--body-size);
 }
@@ -272,13 +279,12 @@ h4 {
         border-bottom: var(--border-width) solid white;
     }
 
-    .post-link, .post-link:hover {
+    a img, a img:hover, 
+    .post-link, .post-link:hover, 
+    .post-link a, .post-link a:hover,
+    .navcontainer-navcolumn a, .navcontainer-navcolumn a:hover {
         border: none;
     }
-
-    .navcontainer-navcolumn a {
-        border: none;
-     }
 }
 
  /*screen size*/
