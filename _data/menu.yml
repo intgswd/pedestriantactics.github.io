@@ -1,12 +1,12 @@
 - title: Stuff
-  subfolderitems:
-  - page: PT-T51
-  - page: PT-T55
-  - page: TEST-POST
+  contents:
+  - title: PT-T51
+  - title: PT-T57
+  - title: TEST-POST
 
 - title: Stuff 2
-  subfolderitems:
-  - page: Facebook
+  contents:
+  - title: Facebook
     url: https://www.facebook.com/pedestriantactics
-  - page: Twitter
+  - title: Twitter
     url: https://twitter.com/pedestriantac
