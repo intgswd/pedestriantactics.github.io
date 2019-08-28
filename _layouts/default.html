@@ -30,7 +30,7 @@
                         <div class="navcontainer-navcolumn">
                             <h3 class="navcolumn-heading">{{ item.title }}</h3>
                             {% for entry in item.subfolderitems %}
-                                {% if page.url %}
+                                {% if entry.url %}
                                     <a class="navcolumn-link" href="{{ entry.url }}">{{ entry.page }}</a>
                                 {% else %}
                                     <a class="navcolumn-link" href="/{{ entry.page | downcase }}">{{ entry.page }}</a>
