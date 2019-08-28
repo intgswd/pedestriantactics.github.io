@@ -7,7 +7,7 @@ title: Index
 <div class="postcontainer">
     <a class="post-link" href="{{ post.url }}">
         <img src="{{ post.thumbnail }}">
-        {{ page.date | date: "%m/%d/%Y" }}
+        {{ post.date | date: "%-m/%-d/%Y" }}
     </a>
 </div>
 {% endfor %}
