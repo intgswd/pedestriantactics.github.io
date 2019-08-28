@@ -1,5 +1,0 @@
-PT-T48
-
-PT-T52
-
-TEST-POST

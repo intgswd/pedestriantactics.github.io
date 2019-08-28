@@ -29,8 +29,8 @@
 
                     <div class="navcontainer-navcolumn">
                         <h3 class="navcolumn-heading">Catalog</h3>
-                        {% for p in site.menu %}
-                        <a class="navcolumn-link" href="{{ p.content }}">{{ p.content }}</a>
+                        {% for item in site.data.menu %}
+                        <a class="navcolumn-link" href="/{{ item }}">{{ item }}</a>
                         {% endfor %}
                     </div>
 
