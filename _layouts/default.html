@@ -28,10 +28,10 @@
                 <div class="navcontainer">
                     {% for item in site.data.menu %}
                         <div class="navcontainer-navcolumn">
-                            <h3 class="navcolumn-heading">{{ title }}</h3>
+                            <h3 class="navcolumn-heading">{{ item.title }}</h3>
                             {% for entry in item.subfolderitems %}
                                 {% if page.url %}
-                                    <a class="navcolumn-link" href="{{ entry.page.url }}">{{ entry.page }}</a>
+                                    <a class="navcolumn-link" href="{{ entry.url }}">{{ entry.page }}</a>
                                 {% else %}
                                     <a class="navcolumn-link" href="/{{ entry.page | downcase }}">{{ entry.page }}</a>
                                 {% endif %}
