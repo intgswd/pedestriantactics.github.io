@@ -29,9 +29,9 @@
 
                     <div class="navcontainer-navcolumn">
                         <h3 class="navcolumn-heading">Catalog</h3>
-                        <a class="navcolumn-link">PT-T55</a>
-                        <a class="navcolumn-link">PT-A8</a>
-                        <a class="navcolumn-link">PT-A7</a>
+                        {% for p in site.menu %}
+                        <a class="navcolumn-link" href="{{ p.content }}">{{ p.content }}</a>
+                        {% endfor %}
                     </div>
 
                     <div class="navcontainer-navcolumn">
