@@ -1,7 +1,6 @@
 ---
 title: Privacy Policy
 ---
-## Privacy Policy
 Last updated: (April/28/2018)
 
 Pedestrian Tactics (“us”, “we”, or “our”) operates http://www.pedestriantactics.com (the “Site”). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site.
