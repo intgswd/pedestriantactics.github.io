@@ -286,8 +286,12 @@ h3 a {
     }
     .footercontainer {
         flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
      }
      .footercolumn {
+        margin-left: 0;
+        margin-right: 0;
         min-width: 100%;
      }
      .darkmodelabel {
