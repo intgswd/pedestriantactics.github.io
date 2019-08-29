@@ -83,12 +83,12 @@ url("fonts/PT-F5-Regular.otf") format("opentype");
     --color-tertiary: blue;
     --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
     --body-size: 12px;
-    --line-height: calc(var(--body-size)*1);
+    --line-height: calc(var(--body-size)*1.2);
     --h1-size: calc(var(--body-size)*12);
     --h2-size: calc(var(--body-size)*3);
     --h3-size: calc(var(--body-size)*1);
     --h4-size: calc(var(--body-size)*1);
-    --spacing: calc(var(--body-size)*1);
+    --spacing: calc(var(--line-height)*1);
     --max-width: 960px;
     --border-width: 1.5px;
 }
