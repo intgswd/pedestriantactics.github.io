@@ -5,7 +5,7 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
             <!--Meta-->
-            <title>Pedestrian Tactics - {% if page.name %}{{ page.name }}{% else %}{{ page.id }}{% endif %}</title>
+            <title>Pedestrian Tactics - {% if page.name %}{{ page.name }}{% else %}{{ page.url | replace:"/","" | replace:".html",""}}{% endif %}</title>
             <meta name=”description” content="The experimental music and multimedia project previously known as Corporate.">
 
             <link rel="stylesheet" href="/style.css">
