@@ -99,7 +99,6 @@ url("fonts/PT-F5-Regular.otf") format("opentype");
 
 html, body, p, a, h1, h2, h3 {
     font-family: var(--font);
-    line-height: var(--line-height);
     color: var(--color-primary);
     background-color: var(--color-secondary);
     margin-bottom: calc(var(--spacing)*1s.5);
