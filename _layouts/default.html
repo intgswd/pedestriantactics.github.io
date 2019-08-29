@@ -35,13 +35,13 @@
 
             <div class="header">
                 <div class="header-logo">
-                    <a href="/"><h1>UN<br />FINISHED</h1></a>
+                    <a href="/"><h1>UN<br />FINISHED1</h1></a>
                 </div>
                 <div class="navcontainer">
 
                     {% for item in site.data.menu %}
                         <div class="navcontainer-navcolumn">
-                            <h3 class="navcolumn-heading">{{ item.title }}</h3>
+                            <h3 class="navcolumn-heading">{% if item.title %}{{ item.title }}{% else %}{{ item.url }}{% endif %}</h3>
                             {% for entry in item.contents %}
                                 {% if entry.url %}
                                     {% assign entry_url = entry.url | prepend: "/" %}
