@@ -1,9 +1,12 @@
 permalink: /:title
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
+
+  - scope:
+      path: "images"
+    values:
       image: :title
