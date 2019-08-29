@@ -101,7 +101,7 @@ html, body, p, a, h1, h2, h3 {
     font-family: var(--font);
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    margin-bottom: calc(var(--spacing)*1.5);
+    margin-bottom: calc(var(--spacing)*1);
     text-decoration: none;
 }
 
@@ -137,6 +137,7 @@ h3 {
     line-height: calc(var(--h3-size)*var(--line-height-multiplier));
 }
 h3 a{
+    padding-bottom: 0;
     margin-right: calc(var(--spacing)*1);
 }
 h4 {
