@@ -1,10 +1,10 @@
-- title: Stuff
+- title: Catalog
   contents:
   - title: PT-T51
   - title: PT-T57
-  - title: TEST-POST
+  - title: Test-Post
 
-- title: Stuff 2
+- title: Links
   contents:
   - title: Facebook
     url: https://www.facebook.com/pedestriantactics

@@ -101,7 +101,7 @@ html, body, p, a, h1, h2, h3 {
     font-family: var(--font);
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    margin-bottom: calc(var(--spacing)*1);
+    margin-bottom: calc(var(--spacing)*0.5);
     text-decoration: none;
 }
 
@@ -209,7 +209,6 @@ h4 {
 }
 
 h3 a {
-    border: none;
     display: inline;
     padding: 0;
  }
@@ -217,26 +216,27 @@ h3 a {
  h3 a:hover {
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    outline: solid 0.2em var(--color-primary); 
+    padding: 0;
+    outline: solid 0.1em var(--color-primary); 
         /*outline size is in em so it changes with the parent type*/
  }
 
 /*footer*/
  .footercontainer {
-     border-top: solid var(--color-primary) var(--border-width);
-     padding-top: calc(var(--spacing)*1);
-     display: flex;
-     flex-direction: row;
-     width: auto;
+    border-top: solid var(--color-primary) var(--border-width);
+    padding-top: calc(var(--spacing)*1);
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: calc(var(--spacing)*-1);
+    margin-right: calc(var(--spacing)*-1);
  }
 
  .footercolumn {
+    margin-left: calc(var(--spacing)*1);
+    margin-right: calc(var(--spacing)*1);
     width: 100%;
- }
-/*this is done differently than the store grid and menu columns. If I switch to more columns, the other method could be implimented*/
- .footercolumn + .footercolumn {
-     margin-left: calc(var(--spacing)*2);
-     max-width: max-content;
+    min-width: max-content;
  }
 
 /*responsive stuff*/
