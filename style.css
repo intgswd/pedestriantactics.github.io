@@ -212,15 +212,13 @@ h3 a {
     border: none;
     display: inline;
     padding: 0;
-    width: fit-content;
  }
 
  h3 a:hover {
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    outline: solid 0.3em var(--color-primary); 
+    outline: solid 0.2em var(--color-primary); 
         /*outline size is in em so it changes with the parent type*/
-    width: fit-content;
  }
 
 /*footer*/
