@@ -6,7 +6,7 @@ title: Index
 {% for post in site.posts %}
 <div class="contentcontainer">
     <a class="post-link" href="{{ post.url }}">
-        <img src="images/{{ post.url }}.jpg">
+        <img src="images/{% if post.image %}{{ post.image }}{% else %}{{ post.url }}{% endif %}.jpg">
         {{ post.date | date: "%-m/%-d/%Y" }}
     </a>
 </div>
