@@ -213,7 +213,7 @@ h3 a {
     padding: 0;
  }
 
- h3 a:hover {
+ h3 a:hover, h3 a:active {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: 0;
