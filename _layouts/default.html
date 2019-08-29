@@ -32,9 +32,9 @@
                             <h3 class="navcolumn-heading">{{ item.title }}</h3>
                             {% for entry in item.contents %}
                                 {% if entry.url %}
-                                    <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+                                    <h3><a href="{{ entry.url }}" class="{% if entry.url == page.url %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% else %}
-                                    <h3><a href="/{{ entry.title | downcase }}">{{ entry.title }}</a></h3>
+                                    <h3><a href="/{{ entry.title | downcase }}" class="{% if entry.title | downcase == page.url %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% endif %}
                             {% endfor %}
                         </div>
