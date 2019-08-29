@@ -1,5 +1,4 @@
 ---
-thumbnail: /images/square.jpg
 title: Test Post
 ---
 ![Test Image 2](/images/portrait.jpg)
