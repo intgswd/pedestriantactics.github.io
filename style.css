@@ -101,7 +101,7 @@ html, body, p, a, h1, h2, h3 {
     font-family: var(--font);
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    margin-bottom: calc(var(--spacing)*1s.5);
+    margin-bottom: calc(var(--spacing)*1.5);
     text-decoration: none;
 }
 
@@ -267,6 +267,7 @@ h3 a {
  @media screen and (max-width: 750px) {
      h1 {
          font-size: calc(var(--h1-size)*0.7);
+         line-height: calc((var(--h1-size)*0.7)*var(--line-height-multiplier));
           /*this addresses the title bleeding over on an iphone 5*/
      }
     .header {
