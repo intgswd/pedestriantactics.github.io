@@ -34,7 +34,7 @@
                                 {% if entry.url %}
                                     <h3><a href="{{ entry.url }}" class="{% if page.url == entry.url %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% else %}
-                                    <h3><a href="/{{ entry.title | downcase }}" class="{% if page.title == entry.url %}active{% endif %}">{{ entry.title }}</a></h3>
+                                    <h3><a href="/{{ entry.title | downcase }}" class="{% if page.title == entry.title | downcase %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% endif %}
                             {% endfor %}
                         </div>
