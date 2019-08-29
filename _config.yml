@@ -7,6 +7,6 @@ defaults:
       layout: "page"
 
   - scope:
-      path: "images"
+      path: "images/"
     values:
       image: :title
