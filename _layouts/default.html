@@ -23,7 +23,7 @@
 
             <div class="header">
                 <div class="header-logo">
-                    <a href="/"><h1>PT-un<br />finished4</h1></a>
+                    <a href="/"><h1>PT-un<br />finished5</h1></a>
                 </div>
                 <div class="navcontainer">
 
@@ -34,7 +34,7 @@
                                 {% if entry.url %}
                                     <h3><a href="{{ entry.url }}" class="{% if page.url == entry.url %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% else %}
-                                    <h3><a href="/{{ entry.title | downcase }}" class="{% if page.url == entry.title | downcase %}active{% endif %}">{{ entry.title }}</a></h3>
+                                    <h3><a href="/{{ entry.title | downcase }}" class="{% if page.url == /entry.title | downcase %}active{% endif %}">{{ entry.title }} {{ /entry.title }} {{ page.url }}</a></h3>
                                 {% endif %}
                             {% endfor %}
                         </div>
