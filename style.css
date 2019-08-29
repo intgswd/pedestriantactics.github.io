@@ -102,7 +102,7 @@ html, body, p, a, h1, h2, h3 {
     line-height: var(--line-height);
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    margin-bottom: calc(var(--spacing)*0.5);
+    margin-bottom: calc(var(--spacing)*1s.5);
     text-decoration: none;
 }
 
