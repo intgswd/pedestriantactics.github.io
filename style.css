@@ -284,4 +284,14 @@ h3 a {
     .navcontainer {
         width: calc(100% + (var(--spacing)*2));
     }
+    .footercontainer {
+        flex-direction: column;
+     }
+     .footercolumn {
+        min-width: 100%;
+     }
+     .darkmodelabel {
+        text-align: left;
+    }
+    
 }
