@@ -108,18 +108,18 @@ html, body, p, a, h1, h2, h3 {
 
 a, a:hover {
     padding-bottom: calc(var(--spacing)*0.3);
-    border-bottom: var(--border-width) solid black;
+    border-bottom: var(--border-width) var(--color-primary);
     display: inline;
     width: fit-content;
 }
 
 a img, a img:hover, 
 .post-link, .post-link:hover, 
-.navcontainer-navcolumn a, .navcontainer-navcolumn a:hover {
+h3 a, h3 a:hover {
     border: none;
 }
 
-body, h3 {
+body {
     font-size: var(--body-size);
 }
 
@@ -205,13 +205,13 @@ h4 {
     padding-bottom: calc(var(--spacing)*1);
 }
 
-.navcontainer-navcolumn a {
+h3 a {
     border: none;
     display: block;
     padding: 0;
  }
 
- .navcontainer-navcolumn a:hover {
+ h3 a:hover {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     outline: solid 0.3em var(--color-primary); 
@@ -237,20 +237,6 @@ h4 {
      max-width: max-content;
  }
 
- /*gumroad overrides*/
- .js-product-information { 
-     background-color: black !important;
- }
- 
- .buttom-primary {
-     background-image: none !important;
-     background-color: red !important;
- }
-
- .product-description p {
-     font-size: 40px;
- }
-
 /*responsive stuff*/
 
 /*dark mode*/
@@ -272,16 +258,6 @@ h4 {
 
     .darkmodelabel:after {
         content: "☾";
-    }
-
-    a, a:hover {
-        border-bottom: var(--border-width) solid white;
-    }
-
-    a img, a img:hover, 
-    .post-link, .post-link:hover, 
-    .navcontainer-navcolumn a, .navcontainer-navcolumn a:hover {
-        border: none;
     }
 }
 
