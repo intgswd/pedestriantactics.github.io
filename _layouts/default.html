@@ -1,12 +1,12 @@
 <html>
         <head>
             <meta charset="UTF-8">
-            <meta customtitle="viewport" content="width=device-width, initial-scale=1.0">
+            <meta title="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
             <!--Meta-->
-            <title>Pedestrian Tactics - {% if page.customtitle %}{{ page.customtitle }}{% else %}{{ page.url | remove: ".html" }}{% endif %}</title>
-            <meta customtitle=”description” content="The experimental music and multimedia project previously known as Corporate.">
+            <title>Pedestrian Tactics - {{ page:title }}</title>
+            <meta title=”description” content="The experimental music and multimedia project previously known as Corporate.">
 
             <link rel="stylesheet" href="/style.css">
 
@@ -58,7 +58,7 @@
             </div>
 
             <div class="pagecontainer">
-                    <h3 class="navcolumn-heading">{% if page.customtitle %}{{ page.customtitle }}{% else %}{{ page.name }}{% endif %}</h3>
+                    <h3 class="navcolumn-heading">{{ page:title }}</h3>
                     {{ content }}
             </div>
 

@@ -1,5 +1,5 @@
 ---
-customtitle: Test Post with a Title
+title: Test Post with a Title
 ---
 ![Test Image 2](/images/portrait.jpg)
 ## Here's an early test new

@@ -1,5 +1,5 @@
 ---
-customtitle: Privacy Policy
+title: Privacy Policy
 ---
 Last updated: (April/28/2018)
 
@@ -8,7 +8,7 @@ Pedestrian Tactics (“us”, “we”, or “our”) operates pedestriantactics
 We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.
 
 ### Information Collection And Use
-While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to your customtitle, email address, phone number, and mailing address (“Personal Information”).
+While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to your title, email address, phone number, and mailing address (“Personal Information”).
 
 ### Log Data
 Like many site operators, we collect information that your browser sends whenever you visit our Site (“Log Data”).
