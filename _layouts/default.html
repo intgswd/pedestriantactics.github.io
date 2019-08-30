@@ -47,7 +47,7 @@
                             <h3 class="navcolumn-heading">{{ item.title }}</h3>
                             {% for entry in item.contents %}
                                 {% if entry.url %}
-                                    {% assign entry_url = entry.url | prepend: "/" %}
+                                    {% assign entry_url = entry.url | downcase | prepend: "/" %}
                                     <h3><a href="{{ entry.url }}" class="{% if page.url == entry_url %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% else %}
                                     {% assign entry_title = entry.title | downcase | prepend: "/" %}
