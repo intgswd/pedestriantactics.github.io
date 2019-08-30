@@ -1,0 +1,301 @@
+/*
+Theme Name: PT2019
+Version: 1.0
+Author: Pedestrian Tactics
+Author URI: http://pedestriantactics.com/
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End CSS Reset*/
+
+/*
+notes:
+
+try horizontal and vertical pictures in the store grid
+
+*/
+
+/*load font*/
+
+@font-face 
+{
+font-family: "PT-F5 Regular";
+src: url("fonts/PT-F5-Regular.ttf");
+src: url("fonts/PT-F5-Regular.woff") format("woff"),
+url("fonts/PT-F5-Regular.otf") format("opentype");
+}
+
+/*variables*/
+
+:root {
+    --color-primary: black;
+    --color-secondary: white;
+    --color-tertiary: blue;
+    --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
+    --body-size: 10px;
+    --line-height-multiplier: 1.2;
+    --h1-size: calc(var(--body-size)*12);
+    --h2-size: calc(var(--body-size)*3);
+    --h3-size: calc(var(--body-size)*1.5);
+    --h4-size: calc(var(--body-size)*1);
+    --spacing: calc(var(--body-size)*var(--line-height-multiplier));
+    --max-width: 960px;
+    --border-width: 1.5px;
+}
+
+/*main css*/
+
+/*text*/
+
+html, body, p, a, h1, h2, h3 {
+    font-family: var(--font);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    margin-bottom: calc(var(--spacing)*0.5);
+    text-decoration: none;
+}
+
+a, a:hover {
+    padding-bottom: calc(var(--spacing)*0.3);
+    border-bottom: solid var(--color-primary) var(--border-width);
+    display: inline;
+    width: fit-content;
+}
+
+a img, a img:hover, 
+.post-link, .post-link:hover, 
+h3 a, h3 a:hover {
+    border: none;
+}
+
+body {
+    font-size: var(--body-size);
+    line-height: calc(var(--body-size)*var(--line-height-multiplier));
+}
+
+h1 {
+    font-size: var(--h1-size);
+    line-height: calc(var(--h1-size)*var(--line-height-multiplier));
+    margin-bottom: calc(var(--spacing)*1);
+}
+h2 {
+    font-size: var(--h2-size);
+    line-height: calc(var(--h2-size)*var(--line-height-multiplier));
+}
+h3 {
+    font-size: var(--h3-size);
+    line-height: calc(var(--h3-size)*var(--line-height-multiplier));
+}
+h3 a{
+    padding-bottom: 0;
+    margin-right: calc(var(--spacing)*2);
+}
+h4 {
+    font-size: var(--h4-size);
+    line-height: calc(var(--h4-size)*var(--line-height-multiplier));
+}
+
+ /*vertical spacing between containers*/
+ .header-logo, .navcontainer, .contentcontainer {
+    margin-bottom: calc(var(--spacing)*3);
+ }
+
+ /*spacing between post elements*/
+ .contentcontainer p, .contentcontainer a, .contentcontainer h2 {
+    margin-bottom: calc(var(--spacing)*1);
+}
+
+ .contentcontainer img {
+    padding-bottom: calc(var(--spacing)*1);
+    width: 100%;
+}
+
+
+/*containers*/
+
+ .container {
+    margin: 0 auto;
+    padding: calc(var(--spacing)*3);
+    width: 100%;
+    max-width: var(--max-width);
+    box-sizing: border-box;
+ }
+
+ .header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .header-logo {
+     margin-right: calc(var(--spacing)*3);
+ }
+
+ .navcontainer {
+     display: flex;
+     flex-direction: row;
+     width: calc(33.333% + (var(--spacing)*0));
+     margin-left: calc(var(--spacing)*-1);
+     margin-right: calc(var(--spacing)*-1);
+ }
+
+ .navcontainer-navcolumn {
+     margin-left: calc(var(--spacing)*1);
+     margin-right: calc(var(--spacing)*1);
+     width: 100%;
+     min-width: max-content;
+ }
+
+ .navcolumn-heading {
+     display: block;
+     border-bottom: solid var(--color-primary) var(--border-width);
+     margin-bottom: calc(var(--spacing)*1);
+     padding-bottom: calc(var(--spacing)*1);
+ }
+
+ .pagecontainer .navcolumn-heading {
+    margin-bottom: calc(var(--spacing)*3);
+    padding-bottom: calc(var(--spacing)*1);
+}
+
+h3 a {
+    display: inline;
+    padding: 0;
+ }
+
+ h3 a:hover, h3 a.active {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    padding: 0;
+    outline: solid var(--color-primary) 0.2em; 
+        /*outline size is in em so it changes with the parent type*/
+ }
+
+/*footer*/
+
+.footerborder {
+    border-top: solid var(--color-primary) var(--border-width);
+    width: auto;
+}
+
+ .footercontainer {
+    padding-top: calc(var(--spacing)*1);
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: calc(var(--spacing)*-1);
+    margin-right: calc(var(--spacing)*-1);
+ }
+
+ .footercolumn {
+    margin-left: calc(var(--spacing)*1);
+    margin-right: calc(var(--spacing)*1);
+    width: 100%;
+    min-width: max-content;
+ }
+
+/*responsive stuff*/
+
+/*dark mode*/
+
+.darkmodelabel {
+    text-align: right;
+}
+
+.darkmodelabel:after {
+    content: "☀";
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+	--color-primary: white;
+    --color-secondary: black; 
+    --color-tertiary: yellow;
+    }
+
+    .darkmodelabel:after {
+        content: "☾";
+    }
+}
+
+ /*screen size*/
+
+ @media screen and (max-width: 750px) {
+     h1 {
+         font-size: calc(var(--h1-size)*0.7);
+         line-height: calc((var(--h1-size)*0.7)*var(--line-height-multiplier));
+          /*this addresses the title bleeding over on an iphone 5*/
+     }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navcontainer {
+        width: calc(100% + (var(--spacing)*2));
+    }
+    .footercontainer {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+     }
+     .footercolumn {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 100%;
+     }
+     .darkmodelabel {
+        text-align: left;
+    }
+    
+}

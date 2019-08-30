@@ -1,0 +1,13 @@
+---
+layout: default
+title: Index
+---
+
+{% for post in site.posts %}
+<div class="contentcontainer">
+    <a class="post-link" href="{{ post.url }}">
+        <img src="{{ post.image }}">
+        {{ post.date | date: "%-m/%-d/%Y" }}
+    </a>
+</div>
+{% endfor %}
