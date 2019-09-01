@@ -165,7 +165,7 @@ h4 {
 
  .container {
     margin: 0 auto;
-    padding: calc(var(--spacing)*3);
+    padding: calc(var(--spacing)*3) 0 calc(var(--spacing)*3) 0;
     width: 100%;
     max-width: var(--max-width);
     box-sizing: border-box;
@@ -271,6 +271,9 @@ h3 a {
  /*screen size*/
 
  @media screen and (max-width: 750px) {
+     .container {
+        padding: calc(var(--spacing)*3);
+     }
      h1 {
          font-size: calc(var(--h1-size)*0.7);
          line-height: calc((var(--h1-size)*0.7)*var(--line-height-multiplier));
