@@ -1,5 +1,5 @@
 ---
-title: Silence Sample Pack
+pagename: Silence Sample Pack
 image: images/silence-sample-pack-booklet-1.jpg
 redirect_from: "/post/silence-sample-pack"
 ---
