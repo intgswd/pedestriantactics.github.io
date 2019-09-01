@@ -61,7 +61,7 @@
             </div>
 
             <div class="pagecontainer">
-                    <p class="navcolumn-heading">{% if page.pagename %}{{ page.pagename }}{% elseif post.date %}{{ post.date | date: "%-m/%-d/%Y" }}{% else %}{{% page:title %}}{% endif %}</p>
+                    <p class="navcolumn-heading">{% if page.pagename %}{{ page.pagename }}{% elsif post.date %}{{ post.date | date: "%-m/%-d/%Y" }}{% else %}{{% page:title %}}{% endif %}</p>
                     {{ content }}
             </div>
 
