@@ -89,7 +89,7 @@ url("fonts/PT-F5-Regular.otf") format("opentype");
     --h3-size: calc(var(--body-size)*1.5);
     --h4-size: calc(var(--body-size)*1);
     --spacing: calc(var(--body-size)*var(--line-height-multiplier));
-    --max-width: calc(960px+(var(--spacing)*4));
+    --max-width: calc( 960px + calc(var(--spacing)*4) );
     --border-width: 1.5px;
 }
 
