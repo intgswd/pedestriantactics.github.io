@@ -38,13 +38,13 @@
 
             <div class="header">
                 <div class="header-logo">
-                    <a href="/"><h1>PT<br />2019</h1></a>
+                    <a href="/"><h1>PT-<br />W3-0</h1></a>
                 </div>
                 <div class="navcontainer">
 
                     {% for item in site.data.menu %}
                         <div class="navcontainer-navcolumn">
-                            <h3 class="navcolumn-heading">{{ item.title }}</h3>
+                            <p class="navcolumn-heading">{{ item.title }}</p>
                             {% for entry in item.contents %}
                                 {% if entry.url %}
                                     {% assign entry_url = entry.url | downcase | prepend: "/" %}
@@ -61,7 +61,7 @@
             </div>
 
             <div class="pagecontainer">
-                    <h3 class="navcolumn-heading">{{ page:title }}</h3>
+                    <p class="navcolumn-heading">{{ page:title }}</p>
                     {{ content }}
             </div>
 
