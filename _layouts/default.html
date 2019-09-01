@@ -44,7 +44,7 @@
 
                     {% for item in site.data.menu %}
                         <div class="navcontainer-navcolumn">
-                            <p class="navcolumn-heading">{% if item.pagename %}{{ item.pagename }}{% elseif post.date %}{{ post.date | date: "%-m/%-d/%Y" }}{% else %}{{% item:title %}}{% endif %}</p>
+                            <p class="navcolumn-heading">{% if item.pagename %}{{ item.pagename }}{% elseif post.date %}{{ item.date | date: "%-m/%-d/%Y" }}{% else %}{{% item:title %}}{% endif %}</p>
                             {% for entry in item.contents %}
                                 {% if entry.url %}
                                     {% assign entry_url = entry.url | downcase | prepend: "/" %}
