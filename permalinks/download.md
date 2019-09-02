@@ -1,4 +1,4 @@
 ---
-- redirect_from: /hellothere
-- redirect_to: http://facebook.com
+redirect_from: /hellothere
+redirect_to: http://facebook.com
 ---
