@@ -5,7 +5,7 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
             <!--Meta-->
-            <title>Pedestrian Tactics - {{ page:title }}</title>
+            <title>Pedestrian Tactics - {% if page:title %}{{ page:title }}{% else %}{{ page:name }}{% endif %}</title>
             <meta title=”description” content="The experimental music and multimedia project previously known as Corporate.">
 
             <link rel="stylesheet" href="/style.css">
@@ -61,7 +61,7 @@
             </div>
 
             <div class="pagecontainer">
-                    <p class="navcolumn-heading">{% if page.date %}{{ page.date | date: "%-m/%-d/%Y" }}{% elsif page:display_name %}{{ page:display_name }}{% else %}{{ page:title }}{% endif %}</p>
+                    <p class="navcolumn-heading">{% if page.date %}{{ page.date | date: "%-m/%-d/%Y" }}{% elsif page:title %}{{ page:title }}{% else %}{{ page:name }}{% endif %}</p>
                     {{ content }}
             </div>
 
