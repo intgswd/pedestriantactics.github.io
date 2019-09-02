@@ -1,4 +1,0 @@
----
-- redirect_from: /hellothere2
-- redirect_to: http://soundcloud.com
----
