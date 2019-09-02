@@ -1,3 +1,5 @@
+# if no url is specified, default.html will use a lowercase version of the title
+
 - title: Catalog
   contents:
   - title: PT-T55

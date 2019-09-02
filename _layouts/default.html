@@ -15,7 +15,10 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
             <!--Meta-->
-            <title>Pedestrian Tactics - {% if page:title %}{{ page:title }}{% else %}{{ page:name }}{% endif %}</title>
+            <title>
+                <!--If the current page doesn't have a title, the file name is used-->
+                Pedestrian Tactics - {% if page:title %}{{ page:title }}{% else %}{{ page:name }}{% endif %}
+            </title>
             <meta title=”description” content="The experimental music and multimedia project previously known as Corporate.">
 
             <link rel="stylesheet" href="/style.css">
@@ -56,6 +59,7 @@
                         <div class="navcontainer-navcolumn">
                             <p class="navcolumn-heading">{{ item:title }}</p>
                             {% for entry in item.contents %}
+                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
                                 {% if entry.url %}
                                     {% assign entry_url = entry.url | downcase | prepend: "/" %}
                                     <h3><a href="{{ entry.url }}" class="{% if page.url == entry_url %}active{% endif %}">{{ entry.title }}</a></h3>
@@ -71,6 +75,7 @@
             </div>
 
             <div class="pagecontainer">
+                    <!--If a page date isn't specified, this defaults to the page title, and then the file name-->
                     <p class="navcolumn-heading">{% if page.date %}{{ page.date | date: "%-m/%-d/%Y" }}{% elsif page:title %}{{ page:title }}{% else %}{{ page:name }}{% endif %}</p>
                     {{ content }}
             </div>
