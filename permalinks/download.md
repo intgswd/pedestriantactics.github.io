@@ -1,4 +1,4 @@
 ---
-redirect_from: /hellothere
-redirect_to: http://twitter.com
+- redirect_from: /hellothere2
+- redirect_to: http://soundcloud.com
 ---
