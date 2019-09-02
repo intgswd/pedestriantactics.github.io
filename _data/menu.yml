@@ -1,4 +1,4 @@
-- display_name: Catalog
+- title: Catalog
   contents:
   - title: PT-T55
   - title: PT-A9
@@ -9,7 +9,7 @@
   - title: PT-A7
   - title: PT-T23
 
-- display_name: Links
+- title: Links
   contents:
   - title: Facebook
     url: https://www.facebook.com/pedestriantactics
