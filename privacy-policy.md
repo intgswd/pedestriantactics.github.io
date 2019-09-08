@@ -1,5 +1,5 @@
 ---
-pagename: Privacy Policy
+title: Privacy Policy
 ---
 Last updated: (April/28/2018)
 
