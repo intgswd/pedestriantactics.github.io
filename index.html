@@ -3,6 +3,7 @@ layout: default
 title: Index
 ---
 
+{% assign items = site.releases | sort: 'date' %}
 {% for post in site.releases %}
 <div class="contentcontainer">
     <a class="post-link" href="{{ post.url }}">
