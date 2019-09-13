@@ -3,6 +3,10 @@ permalink: /:title
 plugins:
   - jekyll-redirect-from
 
+collections:
+  - releases
+  - remixes
+
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
