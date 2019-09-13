@@ -3,12 +3,13 @@ layout: default
 title: 2019 Remixes
 ---
 
-{% assign items = site.remixes | sort: 'date' %}
-{% for post in site.remixes %}
-<div class="contentcontainer">
-    <a class="post-link" href="{{ post.url }}">
-        <img src="{{ post.image }}">
-        {{ post.date | date: "%-m/%-d/%Y" }}
-    </a>
-</div>
+{% for item in site.releases reversed %}
+    {% for post in site.remixes %}
+    <div class="contentcontainer">
+        <a class="post-link" href="{{ post.url }}">
+            <img src="{{ post.image }}">
+            {{ post.date | date: "%-m/%-d/%Y" }}
+        </a>
+    </div>
+    {% endfor %}
 {% endfor %}

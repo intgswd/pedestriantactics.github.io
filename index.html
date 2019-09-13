@@ -3,12 +3,13 @@ layout: default
 title: Index
 ---
 
-{% assign items = site.releases | sort: 'date' %}
-{% for post in site.releases %}
-<div class="contentcontainer">
-    <a class="post-link" href="{{ post.url }}">
-        <img src="{{ post.image }}">
-        {{ post.date | date: "%-m/%-d/%Y" }}
-    </a>
-</div>
+{% for item in site.releases reversed %}
+    {% for post in site.releases %}
+    <div class="contentcontainer">
+        <a class="post-link" href="{{ post.url }}">
+            <img src="{{ post.image }}">
+            {{ post.date | date: "%-m/%-d/%Y" }}
+        </a>
+    </div>
+    {% endfor %}
 {% endfor %}
