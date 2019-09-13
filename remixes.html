@@ -1,0 +1,13 @@
+---
+layout: default
+title: 2019 Remixes
+---
+
+{% for post in site.posts.remixes %}
+<div class="contentcontainer">
+    <a class="post-link" href="{{ post.url }}">
+        <img src="{{ post.image }}">
+        {{ post.date | date: "%-m/%-d/%Y" }}
+    </a>
+</div>
+{% endfor %}
