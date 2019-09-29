@@ -1,6 +1,5 @@
 ---
 title: Privacy Policy
-permalink: "/privacy-policy"
 ---
 Last updated: (April/28/2018)
 
