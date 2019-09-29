@@ -1,5 +1,7 @@
 permalink: /:title
 
+include: ['_pages']
+
 plugins:
   - jekyll-redirect-from
 
