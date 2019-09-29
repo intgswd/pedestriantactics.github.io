@@ -1,12 +1,4 @@
 permalink: /:title
 
-include: ['_pages']
-
 plugins:
   - jekyll-redirect-from
-
-defaults:
-  - scope:
-      path: "/_pages" # an empty string here means all files in the project
-    values:
-      layout: "page" # this defaults all pages to the page template
