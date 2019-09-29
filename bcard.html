@@ -17,23 +17,37 @@ title: BCard
 
         <style>
                 :root {
-                        --size: 3vw;
+                        --size: 5vw;
+                }
+                h1 {
+                        font-size: calc(var(--size)*5);
+                        line-height: calc(var(--size)*1);
                 }
                 h2 {
                         font-size: calc(var(--size)*1);
-                        line-height: calc(var(--size)*1.2);
+                        line-height: calc(var(--size)*1);
                 }
                 .container {
-                        width: auto;
-                        height: auto;
-                        margin: auto;
+                        text-align:center;
+                }
+                .content {
+                        padding: 1vw;
+                        margin: calc(var(--size)*.1);
+                        vertical-align: top;
+                        text-align: left;
+                        display: inline-block;
                 }
         </style>
 </head>
 <body>
         <div class="container">
-                <h2>pedestriantactics@gmail.com</h2>
-                <h2>@pedestriantactics</h2>
-                <h2>pedestriantactics.com</h2>
+                <div class="content">
+                        <h1>👋</h1>
+                </div>
+                <div class="content">
+                        <h2>pedestriantactics@gmail.com</h2>
+                        <h2>@pedestriantactics</h2>
+                        <h2>pedestriantactics.com</h2>
+                </div>
         </div>
 </body>
