@@ -167,7 +167,7 @@ h4 {
      flex-wrap: wrap;
      flex-direction: row;
      justify-content: space-between;
-     width: 100%;
+     width: calc(100% + (var(--spacing)*2);
      margin-left: calc(var(--spacing)*-1);
      margin-right: calc(var(--spacing)*-1);
  }
