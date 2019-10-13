@@ -173,6 +173,7 @@ h4 {
  }
 
  .contentgrid .contentcontainer {
+    /*index grid triple rows*/
     width: calc(33.333% - (var(--spacing)*1));
     margin-left: calc(var(--spacing)*1);
     margin-right: calc(var(--spacing)*1);
@@ -292,6 +293,7 @@ h3 a {
         width: calc(100% + (var(--spacing)*2));
     }
     .contentgrid .contentcontainer {
+        /*index grid double rows for smallish screens*/
         width: calc(50% - (var(--spacing)*1));
      }
     .footercontainer {
@@ -312,6 +314,7 @@ h3 a {
 
 @media screen and (max-width: 640px) {
     .contentgrid .contentcontainer {
+        /*index grid single rows for small screens*/
         width: calc(100% - (var(--spacing)*1));
      }
 }
