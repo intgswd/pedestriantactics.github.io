@@ -173,7 +173,7 @@ h4 {
  }
 
  .contentgrid .contentcontainer {
-    width: calc(33.333% - (var(--spacing)*2));
+    width: calc(33.333% - (var(--spacing)*1));
     margin-left: calc(var(--spacing)*1);
     margin-right: calc(var(--spacing)*1);
  }
@@ -292,7 +292,7 @@ h3 a {
         width: calc(100% + (var(--spacing)*2));
     }
     .contentgrid .contentcontainer {
-        width: calc(50% - (var(--spacing)*2));
+        width: calc(50% - (var(--spacing)*1));
      }
     .footercontainer {
         flex-direction: column;
@@ -310,8 +310,8 @@ h3 a {
     
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
     .contentgrid .contentcontainer {
-        width: calc(100% - (var(--spacing)*2));
+        width: calc(100% - (var(--spacing)*1));
      }
 }
