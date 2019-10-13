@@ -101,7 +101,6 @@ a, a:hover {
     padding-bottom: calc(var(--spacing)*0.3);
     border-bottom: solid var(--color-primary) var(--border-width);
     display: inline;
-    width: fit-content;
 }
 
 a img, a img:hover, 
@@ -161,6 +160,15 @@ h4 {
     width: 100%;
     max-width: var(--max-width);
     box-sizing: border-box;
+ }
+
+ .contentgrid {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: calc(33.333% + (var(--spacing)*0));
+     margin-left: calc(var(--spacing)*-1);
+     margin-right: calc(var(--spacing)*-1);
  }
 
  .header {
