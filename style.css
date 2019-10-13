@@ -277,7 +277,7 @@ h3 a {
 
  /*screen size*/
 
- @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
      h1 {
          font-size: calc(var(--h1-size)*0.7);
          line-height: calc((var(--h1-size)*0.7)*var(--line-height-multiplier));
@@ -291,6 +291,9 @@ h3 a {
     .navcontainer {
         width: calc(100% + (var(--spacing)*2));
     }
+    .contentgrid .contentcontainer {
+        width: calc(50%);
+     }
     .footercontainer {
         flex-direction: column;
         margin-left: 0;
@@ -305,4 +308,10 @@ h3 a {
         text-align: left;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+    .contentgrid .contentcontainer {
+        width: calc(100%);
+     }
 }
