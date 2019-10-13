@@ -167,9 +167,9 @@ h4 {
      flex-wrap: wrap;
      flex-direction: row;
      justify-content: space-between;
-     width: calc(100% + (var(--spacing)*2);
-     margin-left: calc(var(--spacing)*-1);
-     margin-right: calc(var(--spacing)*-1);
+     width: 100%;
+     margin-left: calc(var(--spacing)*1);
+     margin-right: calc(var(--spacing)*1);
  }
 
  .contentgrid .contentcontainer {
