@@ -173,7 +173,7 @@ h4 {
  }
 
  .contentgrid .contentcontainer {
-    width: calc(33.333% - (var(--spacing)*2));
+    width: calc(33.333%);
     margin-left: calc(var(--spacing)*1);
     margin-right: calc(var(--spacing)*1);
  }
