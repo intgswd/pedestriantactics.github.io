@@ -312,7 +312,7 @@ h3 a {
     
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 520px) {
     .contentgrid .contentcontainer {
         /*index grid single rows for small screens*/
         width: calc(100% - (var(--spacing)*2));
