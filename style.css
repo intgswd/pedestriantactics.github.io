@@ -173,8 +173,12 @@ h4 {
  }
 
  .contentgrid .contentcontainer {
+
     /*index grid triple rows*/
-    width: calc(33.333% - (var(--spacing)*4));
+    /*width: calc(33.333% - (var(--spacing)*4));*/
+
+    /*index grid single row*/
+    width: calc(100% - (var(--spacing)*4));
     margin-left: calc(var(--spacing)*2);
     margin-right: calc(var(--spacing)*2);
  }
